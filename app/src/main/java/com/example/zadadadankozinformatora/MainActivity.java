@@ -3,6 +3,8 @@ package com.example.zadadadankozinformatora;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -90,10 +92,28 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        editTextNumerObrazu.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+        editTextNumerObrazu.addTextChangedListener(new TextWatcher() {
             @Override
-            public void onFocusChange(View view, boolean b) {
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                if (editTextNumerObrazu.getText().toString().equals("")
+                        || Integer.parseInt(editTextNumerObrazu.getText().toString()) > 3
+                        || Integer.parseInt(editTextNumerObrazu.getText().toString()) < 1){
+
+                }
+                else{
+                    int indexObrazu = Integer.parseInt(editTextNumerObrazu.getText().toString()) - 1;
+                    imageViewZdjeciaKotow.setImageResource(zdjeciaKotow.get(indexObrazu));
+                }
             }
         });
     }

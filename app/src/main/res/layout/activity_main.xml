@@ -11,7 +11,6 @@
 
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Galeria"
@@ -20,7 +19,7 @@
         android:textSize="25dp"/>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewZdjeciaKotow"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:src="@drawable/kot1" />
@@ -31,7 +30,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonPrev"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -44,7 +43,7 @@
             android:layout_height="wrap_content"/>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonNext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -59,7 +58,6 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -67,7 +65,7 @@
             android:textColor="@color/black" />
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/editTextNumerObrazu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -76,7 +74,7 @@
     </LinearLayout>
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/switchTloNiebieskie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tło niebieskie?"
@@ -88,7 +86,6 @@
         android:layout_weight="1" />
 
     <TextView
-        android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#004C40"

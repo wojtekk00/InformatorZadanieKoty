@@ -21,8 +21,7 @@
     <ImageView
         android:id="@+id/imageViewZdjeciaKotow"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:src="@drawable/kot1" />
+        android:layout_height="300dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
